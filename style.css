@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* general style goes here */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3a3a3a;
+}
+
+.section-description {
+    color: #3a3a3a;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn-primary {
+    margin-top: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 41px;
+    padding: 10px 24px;
+    background: #E02C6D;
+}
+
+/* header styles start */
+header {
+    margin: 90px 120px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>ul {
+    display: flex;
+    gap: 35px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #3a3a3a;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.banner-container {
+    margin-top: 100px;
+    display: flex;
+    gap: 150px;
+}
+
+.banner-container .banner-title {
+    color: #3a3a3a;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.banner-img {
+    position: relative;
+}
+
+.banner-img .circle {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.banner-img .main-camera {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.btn-primary i {
+    margin-left: 5px;
+}
+
+/* header styles end */
+
+/* main styles start */
+
+/* sponsors styles */
+.sponsors {
+    margin: 120px 220px;
+}
+
+.sponsors .sponsors-company {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* sponsors styles end */
+
+/* collection styles */
+.collection {
+    margin: 0 150px;
+    text-align: center;
+}
+
+.collection h3 {
+    margin-bottom: 50px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.card-container .card {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 1px;
+    width: 329px;
+    height: 420px;
+}
+
+.card .card-text {
+    text-align: left;
+    margin-left: 14px;
+    padding: 5px;
+}
+
+.card img {
+    margin-top: 10px;
+}
+
+.card .card-title {
+    color: #18191F;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.card .rate {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.card .card-description {
+    width: 250px;
+    color: #787885;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.card-button {
+    margin: 50px 0 100px;
+    text-align: end;
+}
+
+.card-button button {
+    background-color: transparent;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+}
+
+.card:hover {
+    opacity: 0.5;
+    transition: 1s;
+}
+
+/* collection styles end */
