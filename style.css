@@ -8,6 +8,10 @@
 
 }
 
+body {
+    background-color: rgb(255, 255, 255);
+}
+
 .section-title {
     font-size: 1.5rem;
     font-weight: 700;
@@ -96,9 +100,13 @@ nav li a {
     margin: 120px 220px;
 }
 
-.sponsors .sponsors-company {
+/* .sponsors .sponsors-company {
     display: flex;
     justify-content: space-around;
+} */
+.sponsors .sponsors-company {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 /* sponsors styles end */
@@ -245,3 +253,181 @@ footer {
 }
 
 /* footer styles end */
+
+/* responsive with media query */
+
+/* for mobile */
+@media screen and (max-width: 576px) {
+    header {
+        margin: 30px 30px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav>ul {
+        gap: 10px;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+        gap: 0;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .banner-img img {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .banner-img .main-camera {
+        width: 80%;
+    }
+
+    .banner-img .main-camera {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+
+    .banner-img .circle {
+        width: 90%;
+    }
+
+    .sponsors {
+        margin: 100px 30px;
+    }
+
+    .sponsors .sponsors-company {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .collection {
+        margin: 0 30px;
+        text-align: center;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .card-button {
+        margin: 30px 0 40px;
+        text-align: start;
+    }
+
+    .features {
+        margin: 0 40px;
+    }
+
+    .features-container {
+        flex-direction: column-reverse;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .features-content {
+        text-align: center;
+    }
+
+    .features-content p {
+        margin-top: 20px;
+        width: 350px;
+    }
+
+    footer {
+        height: 330px;
+        margin-top: 50px;
+    }
+
+    .footer-content .footer-icon {
+        margin-top: 50px;
+    }
+
+    .footer-content p {
+        margin-top: 30px;
+    }
+}
+
+/* for tablet */
+@media screen and (min-width: 576px) and (max-width:960px) {
+    header {
+        margin: 30px 80px;
+    }
+
+    nav {
+        gap: 80px;
+    }
+
+    nav>ul {
+        gap: 20px;
+        align-items: center;
+    }
+
+    .banner-img img {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .banner-img .main-camera {
+        width: 100%;
+    }
+
+    .banner-img .main-camera {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+    }
+
+    .banner-img .circle {
+        width: 100%;
+    }
+
+    .sponsors {
+        margin: 100px 100px;
+    }
+
+    .sponsors .sponsors-company {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .collection {
+        margin: 0 50px;
+        text-align: center;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .card-button {
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+    .features {
+        margin: 0 50px;
+    }
+
+    .features-container {
+        gap: 50px;
+        align-items: center;
+    }
+
+    .features-content p {
+        margin-top: 20px;
+        width: 350px;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+}
